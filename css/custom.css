@@ -24,3 +24,7 @@ img.no-border,
 }
 
 /* slide-deck specific below */
+
+.title h1 {
+    font-size: 3em !important;
+}
