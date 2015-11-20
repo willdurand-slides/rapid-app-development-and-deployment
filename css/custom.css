@@ -23,8 +23,35 @@ img.no-border,
     list-style-type: none;
 }
 
+#logo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 90px;
+    z-index: 30;
+    border: none !important;
+}
+
 /* slide-deck specific below */
 
-.title h1 {
-    font-size: 3em !important;
+/*
+ * Main color: #3FB36E
+ * Hover color: #33965B
+ */
+
+.credits {
+    display: block;
+    font-size: 0.6em !important;
+}
+
+.credits,
+.credits a {
+    color: #fff;
+}
+
+.inverted-title h1,
+.inverted-title h2,
+.inverted-title h3 {
+    color: #fff !important;
+    text-shadow: 2px 2px 2px #000;
 }

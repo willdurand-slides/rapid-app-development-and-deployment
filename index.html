@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/white-and-green.css" id="theme">
 
 		<!-- Code syntax highlighting -->
         <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
@@ -37,6 +37,8 @@
 
 	<body>
 		<div class="reveal">
+            <img src="images/sw.jpg" id="logo" />
+
             <div class="slides">
                 <section data-markdown class="title">
                     <script type="text/template">
@@ -46,10 +48,86 @@
                     </script>
                 </section>
 
+                <section data-markdown>
+                    <script type="text/template">
+                        Build, Measure, Learn.
+                    </script>
+                </section>
+
+                <section>
+                    <section data-markdown data-background="images/paper.jpg" class="no-logo inverted-title">
+                        <script type="text/template">
+                            ## Pencils & Papers
+
+                            <p class="credits">
+                                <i class="fa fa-creative-commons"></i> Photo: [Samuel Mann, Flickr](https://flic.kr/p/daz5uW)
+                            </p>
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown data-background="images/wireframes.jpg" class="no-logo inverted-title">
+                        <script type="text/template">
+                            ## Wireframes & Mockups
+
+                            <p class="credits">
+                                <i class="fa fa-creative-commons"></i> Photo: [BALDIRI](http://baldiri.net/2011/05/wireframe-ipad-pencil-notebook/)
+                            </p>
+                        </script>
+                    </section>
+                    <section data-markdown class="no-border">
+                        <script type="text/template">
+                            ### Google Forms
+
+                            ![](images/google-forms.png)
+                        </script>
+                    </section>
+                    <section data-markdown class="no-border">
+                        <script type="text/template">
+                            ### Typeform
+
+                            ![](images/typeform.png)
+                        </script>
+                    </section>
+                    <section data-markdown class="no-border">
+                        <script type="text/template">
+                            ## POP
+
+                            ![](images/pop.png)
+                        </script>
+                    </section>
+                    <section data-markdown class="no-border">
+                        <script type="text/template">
+                            ![](images/pop-example.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## UXPin
+
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown data-background="images/mvp.jpg" class="no-logo inverted-title">
+                        <script type="text/template">
+                            ## Minimum Viable Product
+
+                            <p class="credits">
+                                <i class="fa fa-creative-commons"></i> Photo: [Ryan Brooks, Flickr](https://flic.kr/p/nivrn4)
+                            </p>
+                        </script>
+                    </section>
+                </section>
+
                 <section data-markdown class="title">
                     <script type="text/template">
                         * Validation ASAP
+
                         * Typeform
+
                         * PHP Framework: Silex, Symfony
                         * Python: Django
                         * Ruby On Rails
@@ -112,6 +190,14 @@
 					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 				]
 			});
-		</script>
+
+            Reveal.addEventListener( 'slidechanged', function (event) {
+                if (event.currentSlide.classList.contains('no-logo')) {
+                    document.querySelector('#logo').style.display = 'none';
+                } else {
+                    document.querySelector('#logo').style.display = 'block';
+                }
+            });
+        </script>
 	</body>
 </html>
