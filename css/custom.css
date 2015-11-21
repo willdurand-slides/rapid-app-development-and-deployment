@@ -28,7 +28,6 @@ img.no-border,
     bottom: 20px;
     left: 20px;
     height: 90px;
-    z-index: 30;
     border: none !important;
 }
 
