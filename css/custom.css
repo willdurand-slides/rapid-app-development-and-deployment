@@ -49,6 +49,10 @@ img.no-border,
     color: #fff;
 }
 
+.inverted {
+    color: #3FB36E;
+}
+
 .inverted-title h1,
 .inverted-title h2,
 .inverted-title h3 {
